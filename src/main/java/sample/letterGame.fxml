@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LetterGame">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutX="16.0" layoutY="14.0" prefHeight="200.0" prefWidth="573.0" />
+      <TextField fx:id="textField" layoutX="207.0" layoutY="281.0" onKeyReleased="#sendText" promptText="write letter" />
+      <Button layoutX="248.0" layoutY="336.0" mnemonicParsing="false" onAction="#sendText" text="send" />
+      <Button layoutX="303.0" layoutY="336.0" mnemonicParsing="false" onAction="#setRandom" text="restart" />
+      <TextField fx:id="countOfMoves" editable="false" layoutX="14.0" layoutY="221.0" prefHeight="31.0" prefWidth="101.0" />
+      <Label layoutX="133.0" layoutY="226.0" text="count of moves" />
+   </children>
+</AnchorPane>
